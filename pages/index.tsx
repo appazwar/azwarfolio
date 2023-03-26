@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@azwarapp/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@azwarapp/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,110 +14,89 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main className="">
+        {/* Bio */}
+        <div className="bg-black h-full flex items-center pb-10">
+          <div className="m-auto max-w-6xl grid sm:grid-cols-2 gap-1 p-2 sm:p-0">
+            <div>
+              <h1 className="text-xl font-bold text-yellow-400">
+                SOFTWARE ENGINEER
+              </h1>
+              <p className="pt-8 text-4xl sm:text-5xl font-semibold text-white">
+                HI, I AM A DESIGNER EXPERT IN WEBFLOW DEVELOPMENT
+              </p>
+              <p className="pt-6 text-gray-300 sm:text-xl font-light">
+                My mission is to design and develop a website that you and your
+                audience love.I am a web and system developer with robust
+                problem-solving skills. I am a web and system developer with
+                robust problem-solving skills. I also has been familiar with MVC
+                architecture in my previous project. Able to work with team and
+                commited with given task.I am a web and system developer with
+                robust problem-solving skills. I also has been familiar with MVC
+                architecture in my previous project. Able to work with team and
+                commited with given task
+              </p>
+
+              {/* WhatsApp */}
+              <div className="pt-10 sm:flex gap-2 items-center">
+                <div>
+                  <button className="font-semibold text-white sm:text-xl bg-green-700 p-2 sm:p-4 rounded-3xl  hover:border border-white hover:bg-black">
+                    LET'S CHAT ON WHATSAPP
+                  </button>
+                </div>
+                <div>
+                  <button className="font-semibold text-white sm:text-xl p-2 sm:p-4 rounded-3xl hover:text-gray-300 pt-2 sm:pt-2 pl-2 sm:pl-0">
+                    OR SEND ME AND EMAIL
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Programming Language */}
+        <div className="h-full bg-gray-300 pt-1 p-2 sm:p-0">
+          <div className="m-auto max-w-6xl ">
+            <div className="pt-6">
+              <h2 className="text-2xl font-semibold text-gray-600 pb-4">
+                Programming Language
+              </h2>
+              <div className="grid sm:grid-cols-3 gap-2 items-center">
+                <div>
+                  <Image src={"/js-icon.png"} width={400} height={400} />
+                </div>
+                <div>
+                  <Image src={"/html-icon.png"} width={400} height={400} />
+                </div>
+                <div className="pl-20">
+                  <Image src={"/php-icon.png"} width={250} height={200} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+         {/* Framework*/}
+         <div className="h-full bg-gray-100 pt-1 p-2 sm:p-0">
+          <div className="m-auto max-w-6xl ">
+            <div className="pt-6">
+              <h2 className="text-2xl font-semibold text-gray-600 pb-4">
+                Framework
+              </h2>
+              <div className="grid sm:grid-cols-3 gap-2 items-center">
+                <div>
+                  <Image src={"/laravel-logo.png"} width={400} height={400} />
+                </div>
+                <div>
+                  <Image src={"/react-logo.png"} width={400} height={200} />
+                </div>
+                <div className="pl-20">
+                  <Image src={"/next-js-logo.png"} width={250} height={200} />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
         </div>
       </main>
     </>
-  )
+  );
 }
