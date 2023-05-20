@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 type WrapperProps = {
@@ -8,11 +8,21 @@ type WrapperProps = {
 const Wrapper: React.FC<WrapperProps> = (props) => {
   // Custom logic or components here
 
-  return <>{props.children}</>;
+  return (
+    <>
+      {" "}
+      <div className="sticky top-0 z-50">
+        <Header />
+      </div>
+      <div className="m-auto ">{props.children}</div>
+      <div>
+        <Footer />
+      </div>
+    </>
+  );
 };
 
 export default Wrapper;
-
 
 // type MyComponentProps = {
 //   children: ReactNode;
@@ -33,7 +43,6 @@ export default Wrapper;
 
 // export default MyComponent;
 
-
 // const Wrapper: React.FC = ({ children }) => {
 //   // Custom logic or components here
 
@@ -47,11 +56,10 @@ export default Wrapper;
 //      <Footer/>
 //     </div>
 //   </>)
-    
+
 // };
 
 // export default Wrapper;
-
 
 // export default function Wrapper({ children }) {
 //   return (
