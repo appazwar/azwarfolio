@@ -19,11 +19,11 @@ export default function Home() {
         <div className="bg-black h-full flex items-center pb-10">
           <div className="m-auto max-w-6xl grid sm:grid-cols-2 gap-1 p-2 sm:p-0">
             <div>
-              <h1 className="text-xl font-bold text-yellow-400">
+              <h1 className="text-xl font-bold text-yellow-400 hover:animate-bounce ">
                 SOFTWARE ENGINEER
               </h1>
               <p className="pt-8 text-4xl sm:text-5xl font-semibold text-white">
-                HI, I AM A DESIGNER EXPERT IN WEBFLOW DEVELOPMENT
+                HI, I AM FULLSTACK DEVELOPER
               </p>
               <p className="pt-6 text-gray-300 sm:text-xl font-light">
                 My mission is to design and develop a website that you and your
@@ -32,9 +32,7 @@ export default function Home() {
                 robust problem-solving skills. I also has been familiar with MVC
                 architecture in my previous project. Able to work with team and
                 commited with given task.I am a web and system developer with
-                robust problem-solving skills. I also has been familiar with MVC
-                architecture in my previous project. Able to work with team and
-                commited with given task
+                robust problem-solving skills.
               </p>
 
               {/* WhatsApp */}
@@ -50,6 +48,9 @@ export default function Home() {
                   </button>
                 </div>
               </div>
+            </div>
+            <div>
+              <Image src={"/azwarapp.png"} width={700} height={500} />
             </div>
           </div>
         </div>
@@ -75,8 +76,8 @@ export default function Home() {
           </div>
         </div>
 
-         {/* Framework*/}
-         <div className="h-full bg-gray-100 pt-1 p-2 sm:p-0">
+        {/* Framework*/}
+        <div className="h-full bg-gray-100 pt-1 p-2 sm:p-0">
           <div className="m-auto max-w-6xl ">
             <div className="pt-6">
               <h2 className="text-2xl font-semibold text-gray-600 pb-4">
@@ -91,6 +92,26 @@ export default function Home() {
                 </div>
                 <div className="pl-20">
                   <Image src={"/next-js-logo.png"} width={250} height={200} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Recent Work*/}
+        <div className="h-full bg-gray-300 pt-1 p-2 sm:p-10">
+          <div className="m-auto max-w-6xl ">
+            <div className="pt-6">
+              <h2 className="text-4xl font-semibold text-gray-600 pb-4">
+                RECENT WORK
+              </h2>
+              <div className="">
+                <div>
+                  <img
+                    src={"/penang360-project.jpeg"}
+                    width={700}
+                    height={400}
+                  />
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Wrapper({ children }) {
@@ -9,6 +10,9 @@ export default function Wrapper({ children }) {
         <Header />
       </div>
       <div className="m-auto ">{children}</div>
+      <div>
+       <Footer/>
+      </div>
     </>
   );
 }
