@@ -39,7 +39,7 @@ export default function Home() {
               <div className="pt-10 sm:flex gap-2 items-center">
                 <div>
                   <button className="font-semibold text-white sm:text-xl bg-green-700 p-2 sm:p-4 rounded-3xl  hover:border border-white hover:bg-black">
-                    LET'S CHAT ON WHATSAPP
+                    LETS CHAT ON WHATSAPP
                   </button>
                 </div>
                 <div>
