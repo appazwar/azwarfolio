@@ -50,7 +50,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <Image src={"/azwarapp.png"} width={700} height={500} />
+              <Image src={"/azwarapp.png"} width={700} height={500} alt="image"/>
             </div>
           </div>
         </div>
